@@ -30,7 +30,7 @@
     // if any subviews exist.
     remove: function() {
       if (this.subviews) this.removeSubviews();
-      View.prototype.remove.apply(this, arguments);
+      return View.prototype.remove.apply(this, arguments);
     }
   });
 
